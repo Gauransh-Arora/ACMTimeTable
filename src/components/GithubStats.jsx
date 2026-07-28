@@ -27,7 +27,7 @@ const GithubStats = () => {
         <>
           <div className="stat">
             <div className="issue-name">
-              <img src="src/assets/github-logo-white.png" alt="GitHub Logo"/>
+              <img src="src/assets/github-logo-white.webp" alt="GitHub Logo"/>
               Stars
             </div>
             <div className="issue-stats">
@@ -36,7 +36,7 @@ const GithubStats = () => {
           </div>
           <div className="stat">
             <div className="issue-name">
-              <img src="src/assets/github-logo-white.png" alt="GitHub Logo"/>
+              <img src="src/assets/github-logo-white.webp" alt="GitHub Logo"/>
               Issues
             </div>
             <div className="issue-stats">

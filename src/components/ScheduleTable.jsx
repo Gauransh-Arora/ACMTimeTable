@@ -94,7 +94,7 @@ const ScheduleTable = ({ scheduleData }) => {
     }));
   };
 
-  const renderCell = (day, time) => {
+  const renderCell = (day, time) => { 
     const cellKey = `${day}-${time}`;
     const entry = scheduleData[day] && scheduleData[day][time];
     const isEditing = editingCells[cellKey];

@@ -7,14 +7,15 @@ import Contributer from '../components/Contributers';
 import instagramLogo from '@/assets/logos/instagram.svg';
 import githubLogo from '@/assets/logos/github.svg';
 
-import utkarshImage from '@/assets/team/utkarsh.jpg';
-import aneeshImage from '@/assets/team/aneesh.jpg';
-import namanImage from '@/assets/team/naman.jpg';
-import matangiImage from '@/assets/team/matangi.jpg';
-import gaurangImage from '@/assets/team/gaurang.jpg';
-import vanshImage from '@/assets/team/vansh.jpg';
-import armaanImage from '@/assets/team/armaan.jpg';
-import bhupeshImage from '@/assets/team/bhupesh.png';
+import utkarshImage from '@/assets/team/utkarsh.webp';
+import aneeshImage from '@/assets/team/aneesh.webp';
+import namanImage from '@/assets/team/naman.webp';
+import matangiImage from '@/assets/team/matangi.webp';
+import gaurangImage from '@/assets/team/gaurang.webp';
+import vanshImage from '@/assets/team/vansh.webp';
+import armaanImage from '@/assets/team/armaan.webp';
+import bhupeshImage from '@/assets/team/bhupesh.webp';
+import AnshImage from '@/assets/team/Ansh.webp';
 
 
 
@@ -147,6 +148,12 @@ function Home() {
                 linkedinUrl="https://www.linkedin.com/in/bhupesh-k-185327366/"
                 githubUrl="https://github.com/Bhup-GitHUB"
               /> 
+              <Contributer
+                img_url={AnshImage}
+                name="Ansh Madaan"
+                linkedinUrl="https://www.linkedin.com/in/ansh-madaan-5362b92a8/"
+                githubUrl="https://github.com/Anshm1234"
+              />
               <Contributer
               img_url={namanImage}
                 name="Naman Kundra"
