@@ -9,7 +9,7 @@ import Maintenance from './pages/Maintenance';
 
 function App() {
   // Set this to false to disable maintenance mode
-  const isMaintenanceMode = true;
+  const isMaintenanceMode = false;
 
   return (
     <>

@@ -129,14 +129,28 @@ const ScheduleTable = ({ scheduleData }) => {
         onClick={() => toggleExpanded(day, time)}
       >
         {entry ? entry.slice().reverse().map((value, index) => (
-          <div
-            key={`${day}-${time}-${index}`}
-            contentEditable={isEditing}
-            className={`schedule-input schedule-input-${index} ${divClassName} ${index === 0 ? getColorName(value) : ""} ${index === 3 && getMiniBoxExpanded(index) ? 'mini-expanded' : ''}`}
-            onClick={(e) => index === 3 && toggleMiniBoxExpanded(day, time, index, e)}
-          >
-            {value}
-          </div>
+          index === 0 ? (
+            <div key={`${day}-${time}-${index}`} style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+              {value.split(/\s*\/\s*/).map((type, i) => (
+                <div
+                  key={`${day}-${time}-${index}-${i}`}
+                  contentEditable={isEditing}
+                  className={`schedule-input schedule-input-0 ${divClassName} ${getColorName(type)}`}
+                >
+                  {type}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div
+              key={`${day}-${time}-${index}`}
+              contentEditable={isEditing}
+              className={`schedule-input schedule-input-${index} ${divClassName} ${index === 3 && getMiniBoxExpanded(index) ? 'mini-expanded' : ''}`}
+              onClick={(e) => index === 3 && toggleMiniBoxExpanded(day, time, index, e)}
+            >
+              {value}
+            </div>
+          )
         ))  : (
                   // Fallback for cases where there's no entry
                   <>
